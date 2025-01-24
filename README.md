@@ -107,7 +107,7 @@ To run the project locally:
 ---
 
 ## 🤝 Connect with Me  
-- LinkedIn: [Your LinkedIn Profile](https://www.linkedin.com/in/your-profile)  
+- LinkedIn: [Your LinkedIn Profile](https://www.linkedin.com/feed/)  
 - Portfolio Website: [My Personal Web](https://citrine-tide-fairy.glitch.me/)  
 
 ---
