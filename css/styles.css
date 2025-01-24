@@ -1,0 +1,252 @@
+/*
+COLOR PALETTE
+
+Dark green    #3c8453
+Sandy beige   #bcaa96
+Dark gray     #222222
+Light gray    #d3d4d6
+Off-white     #f6f6f6
+*/
+
+/* GLOBAL STYLES 
+------------------------------------*/
+/* 
+  https://www.paulirish.com/2012/box-sizing-border-box-ftw/
+*/
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* set default to 10px(1rem) */
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+html, body {
+    height: 100%;
+}
+body {
+    background: #f6f6f6; 
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.4rem; /* 14px */
+    line-height: 1.4;
+}
+h1, h2, h3 {
+    font-family: 'Caveat', cursive;
+    font-weight: 400;
+    margin: 0;
+}
+
+h1{
+    font-size: 6rem; /* 60px */
+    line-height: 0.85;
+}
+h2 {
+    font-size: 3.6rem;
+}
+h3 {
+    font-size: 2.4rem;
+}
+
+/* links */
+a {
+    color: #3c8453;
+}
+a:hover {
+    text-decoration: none;
+}
+footer a {
+    color: #bcaa96;
+}
+
+.content-wrapper {
+    margin: 0 auto;
+    padding: 30px;
+    max-width: 900px;
+}
+
+
+/* HOME
+------------------------------------*/
+.home {
+    background: url(../images/background.jpg) no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+.home .content-wrapper {
+    flex: 1 0 auto;
+}
+
+.content-bg {
+    background: rgb(255 255 255 / 0.9);
+    padding: 30px;
+}
+@media screen and (max-width: 650px) {
+    .home .content-wrapper {
+        padding: 10px;
+    }
+    .content-bg {
+        padding: 20px;
+    }
+}
+
+/* RESUME
+------------------------------------*/
+.resume header::before{
+    background: url(../images/background.jpg) center;
+    background-size: cover;
+    content: "";
+    display: block;
+    height: 375px;
+}
+
+.resume-section {
+    margin-bottom: 50px;
+}
+
+.resume-section h2 {
+    border-bottom: 2px dashed #d3d4d6;
+}
+
+.download-link {
+    top: 10px;
+    right: 10px;
+    font-size: 1.3rem;
+}
+
+@media screen and (max-width: 1200px) { 
+    /* todo: change the download-link style to right*/
+    .download-link {
+        position: absolute; /* we dont fixed position for < 1200px screen to avoid cover content*/
+    }
+}
+
+@media screen and (max-width: 500px) {
+    h1{
+        font-size: 5rem; /* 50px */
+    }
+    h2{
+        font-size: 2.6rem; /* 26px */
+    }
+    
+}
+
+/* Projects
+------------------------------------*/
+.project-item{
+    margin: 30px 0;
+}
+.project-item img{
+    height: auto;
+    width: 300px;
+}
+.project-item .btn{
+    margin-bottom: 5px;
+}
+
+@media screen and (min-width: 860px) { 
+    .project-item{
+        display: flow-root; /* we dont need the flow for < 860px screen */
+    }
+    .project-item img{
+        float: left; /* we dont need the float for < 860px screen */
+        margin-right: 40px;
+    }
+}
+/* only show grid for screen size between 650px to 859px */
+@media screen and (min-width: 650px) and (max-width: 859px) { /* using 859px to avoid conflict with the above media query */
+    .project-wrapper{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 20px;
+    }
+    .project-item img{ 
+        width: 100%; /* make the image full width with the container */
+    }
+}
+
+/* only show default (width:300px)(class .project-item img)
+* for screen size between 500px to 649px 
+* because the  layout is suitable for this screen size */
+
+/* show full width for screen size < 500px */
+@media screen and (max-width: 500px) { 
+    .project-item img{
+        width: 100%; 
+        margin-bottom: 10px;
+    }
+    
+}
+
+/* Work Experience
+------------------------------------*/
+.work-item{
+    margin: 30px 0;
+}
+
+.work-details p{
+    margin: 0;
+}
+
+/* only show grid for screen size > 860px */
+@media  screen and (min-width: 860px) { 
+    .work-item{
+        display: grid;
+        grid-template-columns: 300px 1fr;
+        column-gap: 20px;
+    }
+    .work-summary p:first-child{
+        margin-top: 0;
+    }
+    
+}
+
+/* Education
+------------------------------------*/
+.education-item{
+    margin: 30px 0;
+}
+
+.education-item p{
+    margin: 0;
+}
+
+/* FOOTER
+------------------------------------*/
+footer {
+    background: #222;
+    color: #d3d4d6;
+}
+footer p{
+    padding: 0 10px;
+}
+.socials {
+    list-style-type: none;
+    padding: 0;
+}
+.socials li {
+    display: inline-block;
+    margin-left: 10px;
+}
+.socials img {
+    width: 32px;
+}
+.socials img:hover {
+    /* filter: brightness(0.8); */
+    opacity: 0.8;
+}
+
+@media screen and (min-width: 860px) {
+    footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+}
+/* only show center align for screen size < 500px */
+@media screen and (max-width: 500px) {
+    footer {
+        text-align: center;
+    }  
+}

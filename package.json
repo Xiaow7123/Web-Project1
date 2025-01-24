@@ -1,0 +1,22 @@
+{
+  "name": "project1",
+  "version": "1.0.0",
+  "description": "Hey there, everyone! 🌟 I'm super thrilled to share my brand-new personal website with you all! You can find more about me at [My Personal Web](https://cn-personal-web.glitch.me/)",
+  "main": "scripts.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Xiaow7123/Web-Project1.git"
+  },
+  "keywords": [
+    "website"
+  ],
+  "author": "Xiaowei Qi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Xiaow7123/Web-Project1/issues"
+  },
+  "homepage": "https://github.com/Xiaow7123/Web-Project1#readme"
+}
