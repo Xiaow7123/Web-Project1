@@ -4,7 +4,10 @@
   "description": "Hey there, everyone! 🌟 I'm super thrilled to share my brand-new personal website with you all! You can find more about me at [My Personal Web](https://cn-personal-web.glitch.me/)",
   "main": "scripts.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix" 
   },
   "repository": {
     "type": "git",
@@ -18,5 +21,10 @@
   "bugs": {
     "url": "https://github.com/Xiaow7123/Web-Project1/issues"
   },
-  "homepage": "https://github.com/Xiaow7123/Web-Project1#readme"
+  "homepage": "https://github.com/Xiaow7123/Web-Project1#readme",
+  "devDependencies": {
+    "@eslint/js": "^9.19.0",
+    "eslint": "^9.19.0",
+    "globals": "^15.14.0"
+  }
 }
