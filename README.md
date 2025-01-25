@@ -66,8 +66,7 @@ To run the project locally:
 
 ## 🤝 Connect with Me  
 - LinkedIn: [Your LinkedIn Profile](https://www.linkedin.com/in/your-profile)  
-- Portfolio Website: [My Personal Web](# My Personal Website 🌟  
-Welcome to my personal website! This project is my way of showcasing my journey, experiences, and passions in web and app development. 🚀
+- Portfolio Website: [My Personal Web](https://citrine-tide-fairy.glitch.me/)  
 
 ## 🔮 Use of GenAI Tools
 This project leveraged Generative AI (GenAI) tools to enhance efficiency and creativity during development. Below are the details:
